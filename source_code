@@ -175,3 +175,13 @@ X_sample
 y_sample = df["Species"]
 y_sample
 
+# predicting values on sample data 
+y_pred_sample = model.predict(X_sample)
+
+accuracy_sample = accuracy_score(y_sample, y_pred_sample)
+print("Accuracy of the samlpe is:", accuracy_sample)
+print("Accuracy % is: ", accuracy_sample*100,"%")
+
+
+print(classification_report(y_sample, y_pred_sample))
+
